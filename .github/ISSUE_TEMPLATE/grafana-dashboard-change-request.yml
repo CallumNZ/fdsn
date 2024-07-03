@@ -1,0 +1,31 @@
+name: Grafana Dashboard Change Request
+description: Request a change to Grafana Dashboards.
+title: "[Change Request]: "
+labels: ["change-request"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: type
+    attributes:
+      label: What type of change do you want to make?
+      multiple: true
+      options:
+        - New Dashboard
+        - Update existing dashboard
+        - New plugin
+        - Update existing plugin
+      validations:
+        required: true
+  - type: textarea
+    id: blurb
+    attributes:
+      label: What changes are you wanting to make?
+      description: Attach JSON files for dashboards and/or zipped plugin code. If adding a new plugin, please include the update yaml file for datasource provisioning.
+    validations:
+      required: true
