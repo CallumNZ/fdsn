@@ -22,6 +22,9 @@ body:
     id: blurb
     attributes:
       label: What changes are you wanting to make?
-      description: Attach JSON files for dashboards and/or zipped plugin code. If adding a new plugin, please include the update yaml file for datasource provisioning.
+      description: |
+        Attach JSON files for dashboards and/or zipped plugin code. 
+        When zipping, please exclude the node_modules folder. e.g.: zip -r my.zip gns-eqcountquakesearch-datasource -x "*/node_modules/*
+        If adding a new plugin, please include the updated yaml file for datasource provisioning.
     validations:
       required: true
