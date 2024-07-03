@@ -20,8 +20,8 @@ body:
         - Update existing dashboard
         - New plugin
         - Update existing plugin
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: blurb
     attributes:
